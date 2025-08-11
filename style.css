@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #c7c7c7;
+}
+.hero-image {
+  width: 100%;
+  max-width: 1600px; /* Adjust as needed */
+  display: block;
+  margin: 1rem auto;
+  opacity: 0.6; /* 30% transparency */
+  border-radius: 12px; /* Optional: rounded corners */
+}
+/* Navbar */
+header {
+  background: #0a0a23;
+  color: rgb(14, 14, 14);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+#about {
+  margin-top: 5rem;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.logo i {
+  margin-right: 6px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f4b400;
+}
+
+/* Hero */
+.hero {
+  background: url("hero.jpg") center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  background: #f4b400;
+  padding: 0.7rem 1.5rem;
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.btn i {
+  margin-right: 6px;
+}
+
+.btn:hover {
+  background: #ffcc33;
+}
+
+/* Sections */
+.section {
+  padding: 3rem 2rem;
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Bigger Team Grid */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 3fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.team-card img {
+  width: 300px;
+  height: 900px; /* height is 2 times the width */
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+.team-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.25);
+}
+
+.team-card img {
+  width: 100%;
+  border-radius: 8px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.team-card h3 {
+  margin-top: 0.8rem;
+  font-size: 1.4rem;
+}
+
+.team-card p {
+  color: #555;
+}
+
+/* Trials */
+.trials {
+  background: linear-gradient(135deg, #fff7e6, #ffe7ba);
+  border-radius: 8px;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+/* Footer */
+footer {
+  background: #0a0a23;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.trial-image-box {
+  width: 300px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.trial-image-box img {
+  width: 200%;
+  height: 700px; /* Portrait, double the width */
+  object-fit: cover;
+  object-position: center middle;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.trial-instagram a {
+  color: #e1306c;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.trial-instagram a:hover {
+  text-decoration: underline;
+}
+
+.trial-image-box {
+  width: 300px;
+  margin: 2rem auto; /* Centers the box horizontally */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Ensures content inside is centered */
+}
+
+.btn {
+  display: inline-block;
+  background: #1e90ff;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(30, 144, 255, 0.15);
+  transition: background 0.2s, transform 0.2s;
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  background: #1565c0;
+  transform: translateY(-2px) scale(1.04);
+}
